@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Making graphs nice">
+    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="First draft of lift, drag, moment graphs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -105,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639160916829</updated>
       <workItem from="1639160918061" duration="23000" />
-      <workItem from="1639162963673" duration="8102000" />
+      <workItem from="1639162963673" duration="9377000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639168479543</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First draft of lift, drag, moment graphs">
+      <created>1639173107690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639173107690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,9 +156,10 @@
     <MESSAGE value="Set up" />
     <MESSAGE value="Basic data working" />
     <MESSAGE value="Making graphs nice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making graphs nice" />
+    <MESSAGE value="First draft of lift, drag, moment graphs" />
+    <option name="LAST_COMMIT_MESSAGE" value="First draft of lift, drag, moment graphs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639172973705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639174146774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
