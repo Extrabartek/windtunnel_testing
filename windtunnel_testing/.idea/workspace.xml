@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Basic data working">
-      <change afterPath="$PROJECT_DIR$/../.idea/PycharmProjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assigment3/.idea/assigment3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assigment4/.idea/assigment4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assigment5/.idea/assigment5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment2/.idea/assignment2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
+    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Making graphs nice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -111,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639160916829</updated>
       <workItem from="1639160918061" duration="23000" />
-      <workItem from="1639162963673" duration="5457000" />
+      <workItem from="1639162963673" duration="8102000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -127,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639165049869</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Making graphs nice">
+      <created>1639168479543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639168479543</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,9 +148,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up" />
     <MESSAGE value="Basic data working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic data working" />
+    <MESSAGE value="Making graphs nice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making graphs nice" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639168254912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639172973705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
