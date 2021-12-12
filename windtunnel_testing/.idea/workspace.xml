@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Very good stuff">
-      <change afterPath="$PROJECT_DIR$/figuers/myplot2.png" afterDir="false" />
+    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Lift graph">
+      <change afterPath="$PROJECT_DIR$/data/naca642015a_vic_high.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/naca642015a_vic_low.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figuers/myplot1.png" beforeDir="false" afterPath="$PROJECT_DIR$/figuers/myplot1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/figuers/myplot2.png" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/figuers/myplot4.png" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -113,7 +117,7 @@
       <workItem from="1639162963673" duration="9398000" />
       <workItem from="1639235882170" duration="746000" />
       <workItem from="1639236642455" duration="5482000" />
-      <workItem from="1639322225753" duration="2790000" />
+      <workItem from="1639322225753" duration="6433000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -157,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639244692889</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lift graph">
+      <created>1639329524841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639329524841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,9 +193,10 @@
     <MESSAGE value="First draft of lift, drag, moment graphs" />
     <MESSAGE value="Added drag polar" />
     <MESSAGE value="Very good stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Very good stuff" />
+    <MESSAGE value="Lift graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lift graph" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639329021279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639334270789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

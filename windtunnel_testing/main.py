@@ -8,18 +8,22 @@ data2 = "data/naca642015a_no_vis.txt"
 data3 = "data/naca642015a_vic.txt"
 data4 = "data/naca642015a_no_vis_low.txt"
 data5 = "data/naca642015a_no_vis_high.txt"
+data6 = "data/naca642015a_vic_low.txt"
+data7 = "data/naca642015a_vic_high.txt"
 
-list1 = np.genfromtxt(data1, dtype='float', skip_header=2, usecols=(1, 2, 3, 4))
+list1 = np.genfromtxt(data1, dtype='float', skip_header=2, skip_footer=10, usecols=(1, 2, 3, 4))
 list2 = np.genfromtxt(data2, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 list3 = np.genfromtxt(data3, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 list4 = np.genfromtxt(data4, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 list5 = np.genfromtxt(data5, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
+list6 = np.genfromtxt(data6, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
+list7 = np.genfromtxt(data7, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 
 alpha_test = list1[:, 0].tolist()
 cl_test = list1[:, 2].tolist()
 cd_test = list1[:, 1].tolist()
 cm_test = list1[:, 3].tolist()
-
+'''
 cl_true = []
 a_true = []
 cl_return = []
@@ -32,13 +36,24 @@ for i in range(len(cl_test)-10):
 for i in range(11):
     cl_return.append(cl_test[len(cl_test) - 1 - i])
     a_return.append(alpha_test[len(cl_test) - 1 - i])
-
+'''
 alpha_vis = list3[:, 0].tolist()
 cl_vis = list3[:, 1].tolist()
 cd_vis = list3[:, 2].tolist()
 cm_vis = list3[:, 3].tolist()
 x_tran_vis = list3[:, 4].tolist()
 
+alpha_vis_low = list6[:, 0].tolist()
+cl_vis_low = list6[:, 1].tolist()
+cd_vis_low = list6[:, 2].tolist()
+cm_vis_low = list6[:, 3].tolist()
+x_tran_vis_low = list6[:, 4].tolist()
+
+alpha_vis_high = list7[:, 0].tolist()
+cl_vis_high = list7[:, 1].tolist()
+cd_vis_high = list7[:, 2].tolist()
+cm_vis_high = list7[:, 3].tolist()
+x_tran_vis_high = list7[:, 4].tolist()
 
 alpha_no_vis = list2[:, 0].tolist()
 cl_no_vis = list2[:, 1].tolist()
@@ -76,20 +91,21 @@ plt.show()
 '''
 
 # Lift plot
-
+'''
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
 ax1.axvline(color='black')
-ax1.set_xlim(-3, 18)
-ax1.set_ylim(-0.25, 1)
-ax1.set_xticks(np.arange(-3, 19, 2))
-ax1.set_yticks(np.arange(-0.25, 1.01, 0.125))
+ax1.set_xlim(-5, 20)
+ax1.set_ylim(-0.5, 2)
+ax1.set_xticks(np.arange(-5, 21, 2.5))
+ax1.set_yticks(np.arange(-0.5, 2.1, 0.25))
 ax1.set_ylabel(r'Lift Coefficient ($c_l$)')
 ax1.set_xlabel(r'Angle of Attack (AoA)')
 ax1.xaxis.set_major_formatter(StrMethodFormatter(u'{x:.1f}°'))
-plt.plot(a_true, cl_true, marker='x', label=r'Increasing $c_l$')
-plt.plot(a_return, cl_return, marker='x', label=r'Decreasing $c_l$')
+plt.plot(alpha_no_vis_low, cl_no_vis_low, label=r'160 panels')
+plt.plot(alpha_no_vis, cl_no_vis, label=r'50 panels')
+plt.plot(alpha_no_vis_high, cl_no_vis_high, label=r'494 panels')
 # plt.plot(alpha_vis, cl_vis, label="XFOIL with viscosity")
 # plt.plot(alpha_no_vis, cl_no_vis, label="XFOIL without viscosity")
 # plt.plot(alpha_no_vis_low, cl_no_vis_low, label="XFOIL without viscosity Low")
@@ -100,7 +116,7 @@ plt.grid(True)
 plt.legend(loc='best')
 plt.tight_layout()
 plt.show()
-
+'''
 '''
 # Drag plot
 
@@ -126,27 +142,29 @@ plt.show()
 '''
 
 # Moment graph
-'''
+
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
 ax1.axvline(color='black')
 ax1.set_xlim(-5, 20)
-ax1.set_ylim(-0.06, 0.04)
+ax1.set_ylim(-0.05, 0.015)
 ax1.set_xticks(np.arange(-5, 21, 2.5))
-ax1.set_yticks(np.arange(-0.06, 0.05, 0.01))
+ax1.set_yticks(np.arange(-0.05, 0.016, 0.005))
 ax1.set_ylabel(r'Moment Coefficient ($c_m$)')
 ax1.set_xlabel(r'Angle of Attack (AoA)')
 ax1.xaxis.set_major_formatter(StrMethodFormatter(u'{x:.1f}°'))
-plt.plot(alpha_test, cm_test, marker='x', label="Real world")
+# plt.plot(alpha_test, cm_test, marker='x', label="Test data")
 # plt.plot(alpha_vis, cm_vis, label="XFOIL with viscosity")
-plt.plot(alpha_no_vis, cm_no_vis, label="XFOIL without viscosity")
+plt.plot(alpha_no_vis, cm_no_vis, label="160 panels")
+plt.plot(alpha_no_vis_low, cm_no_vis_low, label="50 panels")
+plt.plot(alpha_no_vis_high, cm_no_vis_high, label="494 panels")
 plt.title(r'Moment Coefficient vs. Angle of attack')
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
-'''
+
 '''
 # Drag polar
 
