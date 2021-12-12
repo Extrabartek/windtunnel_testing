@@ -144,7 +144,7 @@ plt.show()
 '''
 
 # Moment graph
-
+'''
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
@@ -166,27 +166,29 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
-
 '''
+
 # Drag polar
 
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
 ax1.axvline(color='black', lw=3)
-ax1.set_xlim(0, 0.1)
+ax1.set_xlim(0, 0.22)
 ax1.set_ylim(-0.5, 1.25)
-ax1.set_xticks(np.arange(0, 0.11, 0.01))
+ax1.set_xticks(np.arange(0, 0.23, 0.02))
 ax1.set_yticks(np.arange(-0.5, 1.26, 0.25))
 ax1.set_ylabel(r'Lift Coefficient ($c_l$)')
 ax1.set_xlabel(r'Drag Coefficient ($c_d$)')
 # ax1.xaxis.set_major_formatter(StrMethodFormatter(u'{x:.1f}°'))
-plt.plot(cd_test, cl_test, marker='x', label="Real world")
-plt.plot(cd_vis, cl_vis, label="XFOIL with viscosity")
+# plt.plot(cd_test, cl_test, marker='x', label="Real world")
+plt.plot(cd_vis_low, cl_vis_low, label="50 panels")
+plt.plot(cd_vis, cl_vis, label="160 panels")
+plt.plot(cd_vis_high, cl_vis_high, label="494 panels")
 # plt.plot(cd_no_vis, cl_no_vis, label="XFOIL without viscosity") # no drag so need for it being included
 plt.title(r'Lift Coefficient vs. Drag coefficient')
 plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
-'''
+
