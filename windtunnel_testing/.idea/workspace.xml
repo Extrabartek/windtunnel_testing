@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Added drag polar">
-      <change afterPath="$PROJECT_DIR$/data/naca642015a_no_vis_high.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/naca642015a_no_vis_low.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figuers/myplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figuers/myplot1.png" afterDir="false" />
+    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="Very good stuff">
+      <change afterPath="$PROJECT_DIR$/figuers/myplot2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -28,17 +25,20 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="226bK0ta7tNCAmTrhzcFMU9iVGz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/figuers/myplot2.png" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -112,7 +112,8 @@
       <workItem from="1639160918061" duration="23000" />
       <workItem from="1639162963673" duration="9398000" />
       <workItem from="1639235882170" duration="746000" />
-      <workItem from="1639236642455" duration="5457000" />
+      <workItem from="1639236642455" duration="5482000" />
+      <workItem from="1639322225753" duration="2790000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639174392041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Very good stuff">
+      <created>1639244692889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639244692889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,14 +175,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Set up" />
     <MESSAGE value="Basic data working" />
     <MESSAGE value="Making graphs nice" />
     <MESSAGE value="First draft of lift, drag, moment graphs" />
     <MESSAGE value="Added drag polar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added drag polar" />
+    <MESSAGE value="Very good stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Very good stuff" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639243662070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639329021279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -9,7 +9,7 @@ data3 = "data/naca642015a_vic.txt"
 data4 = "data/naca642015a_no_vis_low.txt"
 data5 = "data/naca642015a_no_vis_high.txt"
 
-list1 = np.genfromtxt(data1, dtype='float', skip_header=2, skip_footer=10, usecols=(1, 2, 3, 4))
+list1 = np.genfromtxt(data1, dtype='float', skip_header=2, usecols=(1, 2, 3, 4))
 list2 = np.genfromtxt(data2, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 list3 = np.genfromtxt(data3, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
 list4 = np.genfromtxt(data4, dtype='float', skip_header=12, usecols=(0, 1, 2, 4, 5))
@@ -20,6 +20,18 @@ cl_test = list1[:, 2].tolist()
 cd_test = list1[:, 1].tolist()
 cm_test = list1[:, 3].tolist()
 
+cl_true = []
+a_true = []
+cl_return = []
+a_return = []
+
+for i in range(len(cl_test)-10):
+    cl_true.append(cl_test[i])
+    a_true.append(alpha_test[i])
+
+for i in range(11):
+    cl_return.append(cl_test[len(cl_test) - 1 - i])
+    a_return.append(alpha_test[len(cl_test) - 1 - i])
 
 alpha_vis = list3[:, 0].tolist()
 cl_vis = list3[:, 1].tolist()
@@ -65,30 +77,30 @@ plt.show()
 
 # Lift plot
 
-'''
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
 ax1.axvline(color='black')
-ax1.set_xlim(-5, 20)
-ax1.set_ylim(-0.5, 1.25)
-ax1.set_xticks(np.arange(-5, 21, 2.5))
-ax1.set_yticks(np.arange(-0.5, 1.26, 0.25))
+ax1.set_xlim(-3, 18)
+ax1.set_ylim(-0.25, 1)
+ax1.set_xticks(np.arange(-3, 19, 2))
+ax1.set_yticks(np.arange(-0.25, 1.01, 0.125))
 ax1.set_ylabel(r'Lift Coefficient ($c_l$)')
 ax1.set_xlabel(r'Angle of Attack (AoA)')
 ax1.xaxis.set_major_formatter(StrMethodFormatter(u'{x:.1f}°'))
-plt.plot(alpha_test, cl_test, marker='x', label="Test data")
+plt.plot(a_true, cl_true, marker='x', label=r'Increasing $c_l$')
+plt.plot(a_return, cl_return, marker='x', label=r'Decreasing $c_l$')
 # plt.plot(alpha_vis, cl_vis, label="XFOIL with viscosity")
-plt.plot(alpha_no_vis, cl_no_vis, label="XFOIL without viscosity")
+# plt.plot(alpha_no_vis, cl_no_vis, label="XFOIL without viscosity")
 # plt.plot(alpha_no_vis_low, cl_no_vis_low, label="XFOIL without viscosity Low")
 # plt.plot(alpha_no_vis_high, cl_no_vis_high, label="XFOIL without viscosity High")
-plt.plot([-180 / math.pi, 180 / math.pi], [-2 * math.pi, 2 * math.pi], label=r'$2\pi$ slope', linestyle="--")
+# plt.plot([-180 / math.pi, 180 / math.pi], [-2 * math.pi, 2 * math.pi], label=r'$2\pi$ slope', linestyle="--")
 plt.title(r'Lift Coefficient vs. Angle of attack')
 plt.grid(True)
-plt.legend()
+plt.legend(loc='best')
 plt.tight_layout()
 plt.show()
-'''
+
 '''
 # Drag plot
 
@@ -114,7 +126,7 @@ plt.show()
 '''
 
 # Moment graph
-
+'''
 fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.axhline(color='black')
@@ -134,7 +146,7 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
-
+'''
 '''
 # Drag polar
 
