@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="More stuff">
-      <change afterPath="$PROJECT_DIR$/figuers/myplot10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figuers/myplot11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figuers/myplot12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figuers/myplot9.png" afterDir="false" />
+    <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="All plots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +111,7 @@
       <workItem from="1639162963673" duration="9398000" />
       <workItem from="1639235882170" duration="746000" />
       <workItem from="1639236642455" duration="5482000" />
-      <workItem from="1639322225753" duration="14438000" />
+      <workItem from="1639322225753" duration="15435000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -188,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639348903899</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="All plots">
+      <created>1639497645654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639497645654</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,9 +217,10 @@
     <MESSAGE value="Very good stuff" />
     <MESSAGE value="Lift graph" />
     <MESSAGE value="More stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="More stuff" />
+    <MESSAGE value="All plots" />
+    <option name="LAST_COMMIT_MESSAGE" value="All plots" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639497153569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639497533482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
