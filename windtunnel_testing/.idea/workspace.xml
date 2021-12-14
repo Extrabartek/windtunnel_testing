@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcfbcb1d-2b9c-4267-b7b4-94150853bf66" name="Changes" comment="More stuff">
-      <change afterPath="$PROJECT_DIR$/figuers/myplot8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figuers/myplot9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -113,7 +116,7 @@
       <workItem from="1639162963673" duration="9398000" />
       <workItem from="1639235882170" duration="746000" />
       <workItem from="1639236642455" duration="5482000" />
-      <workItem from="1639322225753" duration="10141000" />
+      <workItem from="1639322225753" duration="14438000" />
     </task>
     <task id="LOCAL-00001" summary="Set up">
       <created>1639163418188</created>
@@ -178,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639343259224</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="More stuff">
+      <created>1639348903899</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639348903899</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +218,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="More stuff" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639343422343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/windtunnel_testing$main.coverage" NAME="main Coverage Results" MODIFIED="1639497153569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
