@@ -31,10 +31,26 @@ for combination in comb:
 
 print(len(comb))
 print(len(good_comb_list))
+comb_count = 0
 
+for combination in good_comb_list:
+    i = min(abs(combination[0][1] - combination[1][0]), abs(combination[0][0] - combination[1][1]))
+    i += min(abs(combination[1][1] - combination[2][0]), abs(combination[1][0] - combination[2][1]))
+    i += min(abs(combination[2][1] - combination[3][0]), abs(combination[2][0] - combination[3][1]))
+    i += min(abs(combination[3][1] - combination[4][0]), abs(combination[3][0] - combination[4][1]))
+    i += min(abs(combination[4][1] - combination[0][0]), abs(combination[4][0] - combination[0][1]))
+    comb_count += i
 
+    # Obviously zero
+    # for n_0 in range(combination[0][0], combination[0][1]):
+    #   for n_1 in range(combination[1][0], combination[1][1]):
+    #      if n_0 > n_1:
+    #         for n_2 in range(combination[2][0], combination[2][1]):
+    #            if n_1 > n_2:
+    #               for n_3 in range(combination[3][0], combination[3][1]):
+    #                   if n_2 > n_3:
+    #                      for n_4 in range(combination[4][0], combination[4][1]):
+    #                         if n_3 > n_4 > n_0:
+    #                            comb_count += 1
 
-
-
-
-
+print(comb_count)
