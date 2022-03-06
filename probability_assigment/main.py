@@ -18,7 +18,7 @@ for i in range(high + 1):
 # print(value_range_list)
 # print(len(value_range_list))
 
-comb = list(itr.combinations(value_range_list, dice_count))
+comb = list(itr.combinations_with_replacement(value_range_list, dice_count))
 # print(comb)
 good_comb_list = []
 for combination in comb:
@@ -29,16 +29,17 @@ for combination in comb:
                     if combination[4][1] > combination[0][0] and combination[4][0] < combination[0][1]:
                         good_comb_list.append(combination)
 
+print(len(value_range_list))
 print(len(comb))
 print(len(good_comb_list))
 comb_count = 0
 
 for combination in good_comb_list:
     i = min(abs(combination[0][1] - combination[1][0]), abs(combination[0][0] - combination[1][1]))
-    i += min(abs(combination[1][1] - combination[2][0]), abs(combination[1][0] - combination[2][1]))
-    i += min(abs(combination[2][1] - combination[3][0]), abs(combination[2][0] - combination[3][1]))
-    i += min(abs(combination[3][1] - combination[4][0]), abs(combination[3][0] - combination[4][1]))
-    i += min(abs(combination[4][1] - combination[0][0]), abs(combination[4][0] - combination[0][1]))
+    i *= min(abs(combination[1][1] - combination[2][0]), abs(combination[1][0] - combination[2][1]))
+    i *= min(abs(combination[2][1] - combination[3][0]), abs(combination[2][0] - combination[3][1]))
+    i *= min(abs(combination[3][1] - combination[4][0]), abs(combination[3][0] - combination[4][1]))
+    i *= min(abs(combination[4][1] - combination[0][0]), abs(combination[4][0] - combination[0][1]))
     comb_count += i
 
     # Obviously zero
